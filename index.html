@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout Mirror Fashion</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>	
+	<div class="container">
+		<div class="row">
+			<div id="cabecalho" class="col-md-12">
+				<div class="jumbotron">
+					<h1>Ótima escolha!</h1>
+					<p>Obrigado por comprar na Mirror Fashion! Preencha seus dados para efetivar a compra.</p>
+				</div>
+			</div> 
+		</div>
+	</div>  <!-- Fim do cabeçalho -->
+	
+	<div class="container">
+		<div class="row">
+			<div id="conteudoUm" class="col-md-4" >
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h2 class="panel-title">Sua compra</h2>
+					</div>
+					<div class="panel-body">
+						<h2>Sua compra</h2>
+							<img src="img/foto1.png" alt="Fuzzy Cardigan" 
+								class="img-thumbnail">
+						<dl>
+							<dt>Produto</dt>
+								<dd>Fuzzy Cardigan</dd>
+							<dt>Cor</dt>
+								<dd>verde</dd>
+							<dt>Tamanho</dt>
+								<dd>40</dd>
+							<dt>Preço</dt>
+								<dd>R$ 129,00</dd>
+						</dl>
+					</div>
+				</div>
+			</div> 
+			
+			<div id="conteudoDois" class="col-md-8"">
+				<form action="/efetivar.php" method="POST">
+				<fieldset>
+				<legend>Dados pessoais</legend>
+					<b>Nome completo</b>
+					<input type="text" class="form-control" id="nome" name="nome">
+					<br>
+					<b>Email</b>
+					<input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+
+					<br>
+					<b>CPF</b>
+					<input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">
+					<br>
+					<input type="checkbox" value="sim" name="spam" checked>
+							<b>Quero receber email's da Mirror Fashion</b>
+				</fieldset>
+				<br><br>
+				<fieldset>
+				<legend>Cartão de crédito</legend>
+						<b>Número - CVV</b>
+						<input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+						<br>
+						<b>Bandeira</b>
+						<select name="bandeira-cartao" class="form-control" id="bandeira-cartao" >
+						<option value="master">MasterCard</option>
+						<option value="visa">VISA</option>
+						<option value="amex">American Express</option>
+						</select>
+						<br>
+						<b>Validade</b>
+						<input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+					<br><br>	
+					</fieldset>
+					<button type="submit" class="btn btn-primary">
+					<span class="glyphicon glyphicon-thumbs-up"></span>
+						Confirmar Pedido
+					</button>
+				</form>
+			</div> 
+			
+		</div>
+	</div>  <!-- Fim do conteúdo -->
+	
+	<footer>
+	<div class="container">
+		<div class="row">
+			<div id="rodape" class="col-md-12" >
+			<hr>
+				<p align="right">Direitos reservados...<br>
+				paula.sick@gmail.com<br>
+				telefone: (015) 99654-5434 / 3522-0987</p>
+			</div> 
+		</div>
+	</div> 
+	</footer><!-- Fim do rodapé -->	
+</body> 
+</html>
